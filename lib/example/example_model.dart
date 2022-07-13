@@ -14,7 +14,12 @@ class ExampleWidgetModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void createPosts() {}
+  void createPosts() async {
+    final posts = await apiClient.createPost(
+        title: 'Biography',
+        body: 'I am is a great programmer'
+    );
+  }
 }
 
 class ExampleModelProvider extends InheritedNotifier {
