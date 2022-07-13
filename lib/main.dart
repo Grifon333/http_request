@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:http_request/example.dart';
+import 'package:http_request/example/example.dart';
 
 void main() {
   runApp(const MyApp());
